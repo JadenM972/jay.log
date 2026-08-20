@@ -7,11 +7,29 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-.next
-dist
-dist-ssr
+# Dependencies
+node_modules/
+jspm_packages/
+
+# Next.js / build output
+.next/
+out/
+dist/
+dist-ssr/
+
+# Local environment files
 *.local
+.env
+.env.*
+!.env.example
+
+# Coverage and caches
+coverage/
+.nyc_output/
+.cache/
+.parcel-cache/
+*.tsbuildinfo
+.npm/
 
 # Editor directories and files
 .vscode/*
@@ -23,3 +41,19 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Package manager files
+.pnpm-store/
+.pnp.*
+.yarn/
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Tool output
+build/Release/
+*.tgz
+.vite/
