@@ -3,19 +3,21 @@ import { getAllNotes } from '@/lib/content'
 import { projects } from '@/lib/projects'
 
 const roadmap = [
-  ['01', 'Python', 'the tool I reach for first'],
-  ['02', 'C', 'where the machine stops hiding'],
-  ['03', 'Networking', 'the detour I actually needed'],
-  ['04', 'Rust', 'somewhere up ahead'],
+  ['00', 'Scratch', 'the first step into programming'],
+  ['01', 'Python', 'the tool I reach for first right now'],
+  ['02', 'C', 'where I decided to actually learn programming'],
+  ['03', 'Networking', 'eventhough I was not interested in it at first, it is the foundation of everything I want to do'],
+  ['04', 'Rust', 'Maybe in a few years'],
 ]
 
 const timeline = [
-  ['2017', 'Scratch + simple algorithms', 'Started making little things move and discovering that instructions can become games.'],
-  ['2020', 'Python course', 'First serious contact with programming. Small scripts, loops, and a lot of errors.'],
-  ['2022-2023', 'Unity / C#', 'Tried to build games. Failed a lot. Still learned how projects get too big.'],
+  ['2017', 'Scratch + simple algorithms', 'Started making little things move and discovering that instructions can become games and scenarios.'],
+  ['2020', 'Drag and drop JavaScript', 'A small course of minecraft modding. Learned about loops, variables, and functions.'],
+  ['End of 2020', 'Python course', 'First contact with real programming. Small scripts, loops, and a lot of errors.'],
+  ['2022-2023', 'Unity / C#', 'Tried to build games. Failed a lot. Still learned where were my limits at that time.'],
   ['2023', 'Videogame channel', 'Got to 300 subscribers, then let it down. It was fun while it lasted.'],
   ['Sep 2024 - Feb 2026', 'Stuck by choice', 'I did not feel like doing anything. No dramatic lesson. Just a long pause.'],
-  ['Mar 2026 - now', 'Back at it', 'Cybersecurity, networking, small projects, C, and finally paying attention to foundations.'],
+  ['Mar 2026 - now', 'Back at it', 'Cybersecurity, networking, small projects, C, and finally paying attention to foundations and actually doing something instead of just reading about it.'],
 ]
 
 export default function Home() {
@@ -33,7 +35,7 @@ La cryptologie au cœur du numérique
 
 $ cat last_small_win.txt
 
-understand malloc and free
+understand malloc and free the basics of memory management
 
 $ _`}</pre></section>
     <section className="raw-section" id="roadmap"><h2>learning_path // not a roadmap</h2><p>Not a career plan. Just the order that makes sense today.</p><ul>{roadmap.map(([number, title, detail]) => <li key={title}><span>{number}.</span> <strong>{title}</strong> - {detail}</li>)}</ul></section>
